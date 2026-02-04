@@ -90,7 +90,7 @@
 	branch = libxkbcommon-1.7.0
 [submodule "libxml2"]
 	path = libxml2
-	url = https://gitlab.gnome.org/GNOME/libxml2.git
+	url = https://github.com/GNOME/libxml2.git
 [submodule "wayland-protocols"]
 	path = wayland-protocols
 	url = https://gitlab.freedesktop.org/wayland/wayland-protocols.git
