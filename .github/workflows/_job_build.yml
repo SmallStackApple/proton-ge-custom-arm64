@@ -65,10 +65,10 @@ jobs:
         run: |
           ../configure.sh --build-name=${{ inputs.name }} --container-engine=docker --target-arch=arm64
 
-      - name: Modify dav1d meson.build - change c_std from c99 to c11
-        working-directory: ./build
+      - name: Modify dav1d meson.build - c_std c99 -> c11
         run: |
-          sed -i 's/c_std=c99/c_std=c11/g' src-dav1d/meson.build
+          sed -i 's/c_std=c99/c_std=c11/g' dav1d/meson.build
+
 
       - name: Make ${{ inputs.name }}
         working-directory: ./build
